@@ -15,7 +15,7 @@ jobs:
     name: validate html
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Ensure xmllint
         run: xmllint --version || (sudo apt-get update && sudo apt-get install -y libxml2-utils)
       - name: Validate index.html
